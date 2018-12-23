@@ -13,7 +13,7 @@ public class BanqueEJBImpl implements IBanqueLocal, IBanqueRemote {
 	private EntityManager entityManager;
 
 	@Override
-	public Long addCompte(Compte compte) {
+public Long addCompte(Compte compte) {
 		entityManager.persist(compte);
 		return compte.getCode();
 
